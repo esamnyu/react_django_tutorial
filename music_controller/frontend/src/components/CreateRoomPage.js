@@ -45,7 +45,7 @@ export default class CreateRoomPage extends Component {
                 guest_can_pause: this.state.guestCanPause,
             }),
         };
-        fetch("/api/create-room", requestOptions)
+        fetch("/api/create-room/", requestOptions)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
